@@ -1,0 +1,43 @@
+{
+  "name": "Photo Blog Viewer",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "viewer for photo blogs",
+
+  "browser_action": {
+    "default_title": "click to enable viewer mode",
+    "default_icon": "image/icon16.png"
+  },
+ 
+  "web_accessible_resources": [
+    "html/*",
+    "script/*",
+    "image/*",
+    "style/*"
+  ],
+
+  "icons": {
+    "16":"image/icon16.png",
+    "48":"image/icon48.png",
+    "128":"image/icon128.png"
+  },
+
+  "background": {
+    "scripts": ["script/background.js"],
+    "persistent": false
+  },
+
+  "options_page": "html/options.html",
+
+  "permissions": [
+  	"tabs", 
+    "storage", 
+    "downloads", 
+    "downloads.open", 
+    "downloads.shelf", 
+  	"background", 
+  	"http://*/*", 
+  	"https://*/*",
+    "file://*/*"
+  ]
+}

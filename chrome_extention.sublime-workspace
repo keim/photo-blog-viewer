@@ -1,0 +1,826 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"background"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"index",
+				"index"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"sho",
+				"showIndex"
+			],
+			[
+				"run",
+				"runtime"
+			],
+			[
+				"do",
+				"download"
+			],
+			[
+				"on",
+				"onDocumentReady"
+			],
+			[
+				"transit",
+				"transition-delay"
+			],
+			[
+				"transi",
+				"transition-property"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"trans",
+				"transform-origin"
+			],
+			[
+				"job",
+				"job_id"
+			],
+			[
+				"tab_",
+				"tab_out"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"breadc",
+				"breadcrumb"
+			],
+			[
+				"bt",
+				"btn-default"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"full",
+				"fullscreen-overlay"
+			],
+			[
+				"flh_upt",
+				"flh_updateuser"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"alin",
+				"align-items"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"A",
+				"AjaxClient"
+			],
+			[
+				"jo",
+				"job_id"
+			],
+			[
+				"div",
+				"division"
+			],
+			[
+				"item",
+				"filelist_item"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"publi",
+				"publisher_name"
+			],
+			[
+				"dispa",
+				"dispatcher"
+			],
+			[
+				"dispat",
+				"dispatchers"
+			],
+			[
+				"files",
+				"filelist"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"back",
+				"background-origin"
+			],
+			[
+				"prod",
+				"prodInfo"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"info",
+				"info"
+			],
+			[
+				"cr",
+				"crownAngle"
+			],
+			[
+				"TRA",
+				"MAX_TRACE_DIST"
+			],
+			[
+				"h",
+				"h"
+			],
+			[
+				"y",
+				"y"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"_upd",
+				"_updatePhaseStep"
+			],
+			[
+				"_update",
+				"_updatePitch"
+			],
+			[
+				"_ss",
+				"_ssg_type"
+			],
+			[
+				"Uint",
+				"Uint32Array"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"sl",
+				"sl"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"numb",
+				"numberOfChannels"
+			],
+			[
+				"line",
+				"lineNumber"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 467.0,
+		"last_filter": "git add",
+		"selected_items":
+		[
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Current File"
+			],
+			[
+				"git branch",
+				"Git: New Branch"
+			],
+			[
+				"git b",
+				"Git: New Branch"
+			],
+			[
+				"git change branch ",
+				"Git: Change Branch"
+			],
+			[
+				"git ",
+				"Git: Change Branch"
+			],
+			[
+				"git branch ",
+				"Git: Change Branch"
+			],
+			[
+				"git commit",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"a",
+				"Abacus: align selection"
+			],
+			[
+				"j",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"js",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"ab",
+				"Abacus: align selection"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"jso",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"cal",
+				"Calculate"
+			],
+			[
+				"prty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"inspe",
+				"Web Inspector"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"e",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"is",
+				"Indexing Status"
+			],
+			[
+				"Package Control: eba",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"aba",
+				"Abacus: align selection"
+			],
+			[
+				"random",
+				"Generate Random Text"
+			],
+			[
+				"pc",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 609.0
+	},
+	"console":
+	{
+		"height": 408.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'https': 'https://d802019:d802019@proxy.sec.sbdc.is.dnp.co.jp:8080'})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'http': 'http://main\\d802019:d802019@proxy.sec.sbdc.is.dnp.co.jp:8080'})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'http': 'http://d802019:d802019@proxy.sec.sbdc.is.dnp.co.jp:8080'})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'http': 'http://proxy.sec.sbdc.is.dnp.co.jp:8080'})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'http’: 'http://proxy.sec.sbdc.is.dnp.co.jp:8080’})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler({'http':'http://d802019:d802019@proxy.sec.sbdc.is.dnp.co.jp:8080'})) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/usr/development/chrome/photo_blog_viewer",
+		"/C/usr/development/chrome/photo_blog_viewer/html",
+		"/C/usr/development/chrome/photo_blog_viewer/image",
+		"/C/usr/development/chrome/photo_blog_viewer/script",
+		"/C/usr/development/chrome/photo_blog_viewer/style",
+		"/C/usr/development/chrome/photo_blog_viewer/test"
+	],
+	"file_history":
+	[
+		"/C/usr/development/chrome/photo_blog_viewer/script/background.js",
+		"/C/usr/development/chrome/photo_blog_viewer/test/index.html",
+		"/C/usr/development/chrome/photo_blog_viewer/script/content.js",
+		"/C/usr/development/chrome/photo_blog_viewer/html/content.html",
+		"/C/usr/development/chrome/photo_blog_viewer/style/content.css",
+		"/C/usr/development/chrome/photo_blog_viewer/manifest.json",
+		"/C/usr/work/pubnext/chrome-extension/manifest.json",
+		"/C/usr/work/epub/2017W3C_契約書/W3C Transitional Publishing Industry Member Agreement.html",
+		"/C/usr/development/chrome/photo_blog_viewer/test/server.bat",
+		"/C/usr/temp/_download/test.html",
+		"/C/usr/development/chrome/photo_blog_viewer/test/server.rb",
+		"/C/usr/work/pubnext/chrome-extension/html/class/Global.js",
+		"/C/usr/temp/_download/jquery-3.2.1.min.js",
+		"/C/usr/temp/_download/jquery-3.2.1.slim.min.js",
+		"/C/usr/temp/_download/jqsa.js",
+		"/C/usr/temp/_download/jquery-3.2.1.slim.js",
+		"/C/usr/development/chrome/photo_blog_viewer/html/popup.html",
+		"/C/usr/development/chrome/photo_blog_viewer/script/popup.js",
+		"/C/usr/development/chrome/photo_blog_viewer/script/injector.js",
+		"/C/usr/development/chrome/photo_blog_viewer/script/merged.js",
+		"/C/usr/work/pubnext/chrome-extension/html/css/common_style.css",
+		"/C/usr/work/pubnext/chrome-extension/html/class/ListView.js",
+		"/C/usr/development/chrome/photo_blog_viewer/style/bootstrap.min.css",
+		"/C/usr/work/pubnext/chrome-extension/content.js",
+		"/C/usr/development/chrome/photo_blog_viewer/test/img/script.rb",
+		"/C/usr/development/chrome/photo_blog_viewer/script/jquery-3.2.1.min.js",
+		"/C/usr/development/chrome/photo_blog_viewer/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js",
+		"/C/usr/development/chrome/photo_blog_viewer/content.js",
+		"/C/usr/development/chrome/photo_blog_viewer/chrome_extention.sublime-project",
+		"/C/usr/work/pubnext/chrome-extension/html/class/Menu.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/BreadCrumbView.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/FileView.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/AjaxClient.js",
+		"/C/usr/development/chrome/imglinkdown/background.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/View.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/main.js",
+		"/C/usr/work/pubnext/chrome-extension/html/index.html",
+		"/C/usr/development/chrome/imglinkdown/content.js",
+		"/C/usr/work/pubnext/chrome-extension/html/merged.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/Store.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/TreeView.js",
+		"/C/usr/work/pubnext/効率化/material-read/material-json_jobid=35196_currentid=1917478_tabType=1.json",
+		"/C/usr/work/pubnext/chrome-extension/html/class/ListTemplate.js",
+		"/C/usr/work/pubnext/効率化/material-read/job-read-json.json",
+		"/C/usr/work/pubnext/効率化/material-read/material-treeview_jobid=35280_tabType=1.json",
+		"/C/usr/temp/material_upload_html5.jsp",
+		"/C/usr/work/pubnext/chrome-extension/html/class/UploadPopup.js",
+		"/C/usr/work/pubnext/chrome-extension/html/class/FileManager.js",
+		"/C/usr/temp/_download/weeklyreport.html",
+		"/C/usr/temp/_download/weeklyreport (1).html",
+		"//10.210.90.6/プロジェクト/ハイブリッド出版制作PF開発/02_詳細仕様/認証API/テストデータ/WebApiTest.html",
+		"/C/usr/temp/material-upload.js",
+		"/C/usr/work/pubnext/効率化/pubnextユーザー登録補助/index.html",
+		"/C/usr/work/pubnext/効率化/material-read/_test.html",
+		"/C/usr/work/pubnext/chrome-extension/html/class/BreadCrumbsView.js",
+		"/C/usr/work/pubnext/効率化/material-read/material-json_jobid=35196_currentid=1917478_tabType=1__search=false_nd=1498785125393_rows=0_page=1_sidx=file_name_sord=asc.json",
+		"/C/usr/work/pubnext/効率化/material-read/material-treeview_jobid=35280_tabType=1",
+		"/C/usr/work/pubnext/効率化/material-read/material-json__jobid=8844__tabType=1.json",
+		"/C/usr/work/pubnext/効率化/material-read/view-source_https___test.pubnext.jp_sspf_n_material-read - コピー.html",
+		"/C/usr/temp/material_read.jsp",
+		"/C/usr/work/pubnext/chrome-extension/popup.html",
+		"/C/usr/temp/job_read_material.jsp",
+		"/C/usr/development/chrome/imglinkdown/popup.js",
+		"/C/usr/development/chrome/imglinkdown/popup.html",
+		"/C/usr/development/chrome/download_manager/popup.js",
+		"/C/usr/work/pubnext/chrome-extension/html/test.js",
+		"/C/usr/work/pubnext/chrome-extension/html/scripts/jquery-3.2.1.min.js",
+		"/C/usr/work/pubnext/chrome-extension/html/scripts/bootstrap.min.js",
+		"/C/usr/work/pubnext/chrome-extension/html/scripts/jquery-3.1.0.js",
+		"/C/usr/work/pubnext/効率化/material-read/material-json__jobid=8844__tabType=__test.json",
+		"/C/usr/work/pubnext/効率化/material-read/view-source_https___test.pubnext.jp_sspf_n_material-read.html",
+		"/C/usr/work/pubnext/効率化/material-read/sspf.js",
+		"/C/usr/work/pubnext/効率化/material-read/sspf/common/css/common2.css",
+		"/C/usr/development/ruby/imcgcg/relation.rb",
+		"//com01-dep.main.ad.dnp.co.jp/DPS$/10_部署/出版ソリューションU/共通/提案関連/要望_問合せ/改修項目抽出v20170601_mesuda.md",
+		"/C/usr/temp/KKBest.md",
+		"/C/usr/temp/pocket_export.html",
+		"//10.210.90.6/プロジェクト/ハイブリッド出版制作PF開発/15_運用・保守/データサルベージ方法.md",
+		"/C/usr/temp/_download/weeklyreport (2).html",
+		"/C/usr/work/pubnext/効率化/pubnextユーザー登録補助/css/font-awesome.css",
+		"/C/usr/work/pubnext/効率化/pubnextユーザー登録補助/script/klassModule.js",
+		"/C/usr/development/ruby/imcgcg/script.rb",
+		"/C/usr/development/ruby/imcgcg/demo.html",
+		"/C/usr/work/pubnext/効率化/pubnextユーザー登録補助/script/ripples.min.js",
+		"/C/usr/temp/データ保管サービス市ヶ谷営業企画打ち合わせ.txt",
+		"/C/usr/bin/ImageMagick-6.9.8-Q16/index.html",
+		"/C/usr/development/ruby/imcgcg/relations.json",
+		"/C/usr/development/ruby/imcgcg/idols.json",
+		"/C/usr/development/ruby/imcgcg/imcgcg.html",
+		"/C/usr/development/ruby/imcgcg/log.txt",
+		"/C/usr/development/ruby/imcgcg/\"chika",
+		"/C/usr/development/ruby/imcgcg/petit.html",
+		"/C/usr/development/ruby/imcgcg/IMCG_charactor_relations.csv",
+		"/C/usr/temp/_download/IMCG_charactor_relations.csv",
+		"/C/usr/temp/_download/script.rb",
+		"/C/usr/development/ruby/imcgcg/list.tsv",
+		"/C/usr/development/glsl/basic.glsl",
+		"/C/usr/development/ruby/imcgcg/list.txt",
+		"/C/usr/temp/アイマス シンデレラガールズ カードギャラリー.html",
+		"/C/usr/temp/mp3/script.rb",
+		"/C/usr/development/glsl/oceanwave.glsl",
+		"/C/usr/bin/Ruby23/lib/ruby/gems/2.3.0/gems/ruby-mp3info-0.8.10/lib/mp3info.rb",
+		"/C/usr/work/pubnext/ログ解析/ap/script.rb",
+		"/C/usr/development/git/go-gae-quickstart/app.yaml",
+		"/C/Users/d802019/_netrc",
+		"/C/usr/development/git/go-gae-quickstart/hello.go",
+		"/C/usr/development/git/go-gae-quickstart/README.md",
+		"/C/usr/development/git/SiON/src/org/si/sound/SoundObject.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/PolyphonicSynthesizer.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/synthesizers/AnalogSynth.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/synthesizers/BasicSynth.as",
+		"/C/usr/development/glsl/_lib.glsl",
+		"/C/usr/development/glsl/m_temp2.glsl",
+		"/C/usr/development/git/SiON/src/org/si/sound/synthesizers/FMSynth.as",
+		"/C/usr/development/git/SiON/src/org/si/sion/SiONVoice.as",
+		"/C/usr/development/git/SiON/src/org/si/sion/sequencer/SiMMLVoice.as",
+		"/C/usr/development/git/SiON/src/org/si/sion/module/SiOPMChannelParam.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/synthesizers/_synthesizer_internal.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/synthesizers/VoiceReference.as",
+		"/C/usr/development/git/SiON/src/org/si/sound/BassSequencer.as",
+		"/C/usr/temp/_download/watch-time-stop-watch-canvas-background/js/index.js",
+		"/C/Users/d802019/AppData/Local/Temp/Temp1_stopwatch.zip/stopwatch.html",
+		"/C/usr/temp/_download/watch-time-stop-watch-canvas-background/index.html",
+		"/C/usr/temp/stopwatch.html",
+		"/C/usr/temp/_download/watch-time-stop-watch-canvas-background/css/style.css",
+		"/C/usr/temp/_download/css-stop-watch/index.html",
+		"/C/usr/temp/_download/css-stop-watch/css/style.css",
+		"/C/usr/development/glsl/m_temp.glsl"
+	],
+	"find":
+	{
+		"height": 52.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+			"C:\\usr\\work\\pubnext\\chrome-extension\\html\\class",
+			"C:\\usr\\development\\git\\shadertoy_clone\\original"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			" width=\"100px\"",
+			"isImageLink",
+			".$thumb",
+			"data.$thumb",
+			"$thumb",
+			"20",
+			"linkurl",
+			"filters",
+			"linkFilter",
+			"activeDomainList",
+			"blogDomainList",
+			"imageFilter",
+			"filters.image",
+			"filters.link",
+			".filters.link",
+			"link",
+			"https://test.pubnext.jp/",
+			"https://test.pubnext.jp",
+			"_createPreviewPages",
+			"showPreview",
+			"createLinkList",
+			"showPreview",
+			"showIndex",
+			"toggle",
+			"selectedLinkIndex",
+			"selectedIndex",
+			"pageIndex",
+			"showPage",
+			"selectIndexItem",
+			"showPage",
+			"showIndex",
+			"showPage",
+			"viewMode",
+			"_createImageView",
+			",",
+			"selectedIndex",
+			"$$bookLayer",
+			"bookLayer",
+			"$",
+			"boolay-link-item",
+			">#boolay-link>",
+			">#boolay-link",
+			"imageView",
+			"linkPane",
+			"imagePane",
+			"#boolay-view>",
+			"onLinkItemClicked",
+			"indexPane",
+			"link",
+			"index",
+			"link",
+			"index",
+			"open",
+			"showIndex",
+			"command",
+			"thumburl",
+			"255",
+			"href",
+			"sendMessage",
+			"createImageView",
+			"images",
+			"this.image",
+			"links",
+			"this.links",
+			"injectScriptTo",
+			"console",
+			"updateBadge",
+			"100",
+			"link",
+			"boolay-pi",
+			"domainFilter",
+			"{$link, linkurl, $thumb, thumburl}",
+			"createLinkList",
+			"activeDomainList",
+			"injectScriptTo",
+			"consol",
+			"get()",
+			"Content",
+			"injectScriptTo",
+			"Content",
+			"Injector",
+			"init_",
+			"\"init",
+			"ContentScript",
+			" : ",
+			"  \"",
+			"\"",
+			"class",
+			"_setLinkImages",
+			"waitForActivate",
+			"activate",
+			"onDocumentReady",
+			"res",
+			"check",
+			"checkDomain",
+			"_pickDomain",
+			"function",
+			"checkActiveDomain",
+			"_onButtonClicked",
+			"extension",
+			"Injector",
+			"checkActiveDomain",
+			"activate",
+			"chrome",
+			"sendMessage",
+			"chrome",
+			"checkActiveDomain",
+			"_pickDomain",
+			"linkFilter",
+			"imageFilter",
+			"linkFilter",
+			"imageFilter",
+			"linkFilter",
+			"createLinkList",
+			"sendMessage",
+			"startPopup",
+			"_startPopupCallback",
+			"sendMessage",
+			".replace",
+			"toggleBooklayer",
+			"options",
+			"activeDomainList",
+			"init_activeDomainList",
+			"activeDomainRegExp",
+			"html",
+			"createBookLayer",
+			"response",
+			"resp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"!\n",
+			"\"yuu\"",
+			"\",\"",
+			"",
+			"!",
+			"(sqrt(0.447419120141477), sqrt(0.5145206461078294), sqrt(0.017702643022920864))",
+			"media",
+			"dark",
+			"  ",
+			"2",
+			"script",
+			"!"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 50.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 253.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 136.0
+	},
+	"pinned_build_system": "",
+	"project": "chrome_extention.sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\usr\\work\\pubnext\\効率化\\pubnextユーザー登録補助\\script\\klassModule.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
