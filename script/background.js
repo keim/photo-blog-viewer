@@ -13,8 +13,8 @@ class Background {
       this.previewThreshold = data.previewThreshold || Background.initialSettings.previewThreshold;
     });
   }
- 
- 
+
+
 //----- props
   get domainFilter() {
     if (!this._domainFilter) {
@@ -24,13 +24,13 @@ class Background {
     }
     return this._domainFilter;
   }
- 
- 
+
+
 //----- handler
   onMessage(request, sender, response) {
     this[request.type](sender.tab.id, request.data, response);
   }
- 
+
   onTabUpdated(tabid, info, tab) {
     if (info.status == "loading") {
       if (this.checkDomain(tab.url)) {
@@ -40,7 +40,7 @@ class Background {
       }
     }
   }
- 
+
   onBrowserButtonClicked(tab) {
     if (this.checkDomain(tab.url)) {
       this.unregisterDomain(tab.url);
@@ -50,20 +50,20 @@ class Background {
       this.activate(tab.id);
     }
   }
- 
- 
+
+
 //----- domain check
   checkDomain(url) {
     return (this.activeDomainList.indexOf(this._getDomain(url)) != -1);
   }
- 
+
   registerDomain(url) {
     this.activeDomainList.push(this._getDomain(url));
     chrome.storage.sync.set({
       activeDomainList: this.activeDomainList.join(",")
     });
   }
- 
+
   unregisterDomain(url) {
     const target = this._getDomain(url);
     this.activeDomainList = this.activeDomainList.filter(domain=>(domain!=target));
@@ -71,13 +71,13 @@ class Background {
       activeDomainList: this.activeDomainList.join(",")
     });
   }
- 
+
   _getDomain(url) {
     const m = url.match(this.domainFilter);
     return m && m[0] || url;
   }
- 
- 
+
+
 //----- tab operation
   injectScriptTo(tabid) {
     chrome.tabs.insertCSS(tabid, {file:"./style/content.css"}, ()=>{
@@ -86,7 +86,7 @@ class Background {
       });
     });
   }
- 
+
   activate(tabid) {
     chrome.tabs.sendMessage(tabid, {type:"ping"}, (data)=>{
       if (!data) {
@@ -109,21 +109,21 @@ class Background {
       }
     });
   }
- 
+
   inactivate(tabid) {
     chrome.tabs.sendMessage(tabid, {type:"inactivate"}, (data)=>{
       this.updateBadge(tabid, data);
     });   
   }
+
+
  
- 
-  
 //----- message handler
   updateBadge(tabid, data) {
     chrome.browserAction.setBadgeText({"text":data.text, "tabId":tabid});
     chrome.browserAction.setBadgeBackgroundColor({"color":data.color, "tabId":tabid});
   }
- 
+
   download(tabid, data) {
     data.images.forEach((image)=>{
       const filename = data.folder+"/"+image.linkurl.match(/.+\/(.+?)([\?#;].*)?$/)[1];
@@ -133,8 +133,8 @@ class Background {
     });
   }
 }
- 
- 
+
+
 Background.initialSettings = {
   linkFilter:       ".*", 
   imageChecker:     "^[^?]+\.(jpg|jpeg|gif|png|JPG|JPEG|GIF|PNG)(\\?.*)?$",
@@ -143,6 +143,6 @@ Background.initialSettings = {
   blogDomainList:   ["blog.livedoor.jp"],
   keyboardkey:      true
 };
- 
- 
+
+
 const background = new Background();
