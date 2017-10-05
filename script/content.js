@@ -219,12 +219,14 @@ class Content {
     }
   }
 
+
   __getText(data, $link) {
     const text = $link.find().addBack().text();
     if (!/^\s*$/.test(text)) {
       data.text = text;
     }
   }
+
 
   __setListItem(list, data, dict) {
     if (!dict[data.linkurl]) {
@@ -234,7 +236,6 @@ class Content {
       Object.assign(list[dict[data.linkurl]], data);
     } 
   }
-
 
 
   createBookLayer() {
@@ -310,19 +311,21 @@ class Content {
   }
 
   selectLinkTableItem(index) {
-    if (index < 0) index += this.links.length;
-    if (index >= this.links.length) index -= this.links.length;
+    if (this.links.length == 0) return;
+    if (index < 0) index = 0;
+    if (index >= this.links.length) index = this.links.length-1;
     this.selectedLinkIndex = index;
 
     this.linktable.$container.children(".boolay-link").removeClass("selected");
     this.links[index].$pane.addClass("selected");
     this.pageindex.$elem.text("link table");
 
+    let scrollTop = this.linktable.$container.scrollTop();
     const $pane = this.links[index].$pane,
-          centerY = $pane.position().top + $pane.height() * 0.5;
-    let scrollTop = centerY - this.linktable.$elem.height() * 0.5;
+          centerY = $pane.position().top + scrollTop + $pane.height() * 0.5;
+    scrollTop = centerY - this.linktable.$elem.height() * 0.5;
     if (scrollTop < 0) scrollTop = 0;
-    this.linktable.$container.scrollTop(scrollTop);
+    this.linktable.$container.animate({scrollTop});
   }
 
   movePreviewPage(index) {
