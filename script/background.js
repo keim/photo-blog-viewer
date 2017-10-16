@@ -138,7 +138,7 @@ class Background {
 Background.initialSettings = {
   linkFilter:       ".*", 
   imageChecker:     "^[^?]+\.(jpg|jpeg|gif|png|JPG|JPEG|GIF|PNG)(\\?.*)?$",
-  previewThreshold: 360, 
+  previewThreshold: 400, 
   activeDomainList: [],
   blogDomainList:   ["blog.livedoor.jp"],
   keyboardkey:      true

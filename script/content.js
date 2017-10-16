@@ -37,6 +37,9 @@ class Content {
         "Shift+Control+S":"downloadAll"
       }
     };
+
+    this.imageTag = "img,[data-lazy-src],[data-original],[data-src],[data-normal],[data-echo]";
+
     chrome.runtime.onMessage.addListener(this.onMessage.bind(this));
     $("body").on("keydown", this.onKeyDown.bind(this));
   }
@@ -135,7 +138,7 @@ class Content {
     $("a").each((index, link)=>{
       // link
       const $link   = $(link), 
-            linkurl = $link.attr("href"),
+            linkurl = $link.get(0).href,
             data    = {$link, linkurl};
       if (!this.filters.link.test(linkurl)) return;
 
@@ -145,21 +148,19 @@ class Content {
       this.__getText(data, $link);
       // set list item with checking duplication
       /**/
-      if (data.thumburl) this.__setListItem(list, data, dict);
+      if (data.thumburl) {
+        this.__setListItem(list, data, dict);
+      }
     });
 
     // check all images outside of links
-    $("img").each((index, img)=>{
-      const $img = $(img);
-      if ($img.parents("a").length==0 && $img.width()>this.threshold && $img.height()>this.threshold) {
-        const data = {
-          $link: $img,
-          linkurl: $img.attr("src"),
-          thumburl: $img.attr("src"),
-          $originalElem: $img,
-          shownAsPreview: true
-        };
-        this.__setListItem(list, data, dict);
+    $(this.imageTag).each((index, img)=>{
+      const data = {$link:$(img)};
+      if (data.$link.parents("a").length==0) {
+        if (this.__getImage(data, data.$link)) {
+          data.linkurl = data.thumburl;
+          this.__setListItem(list, data, dict);
+        }
       }
     });
 
@@ -169,7 +170,7 @@ class Content {
 
   __getThumbnail(data, $link) {
     // get included image
-    const $thumbnails = $link.find("img");
+    const $thumbnails = $link.find(this.imageTag);
 
     // info from direct link
     if (this.filters.image.test(data.linkurl)) {
@@ -181,42 +182,39 @@ class Content {
 
     // info from included image
     for (let i=0; i<$thumbnails.length; i++) {
-      const $thumb = $thumbnails.eq(i);
-      if ($thumb.width()>16 && $thumb.height()>16) {
-        data.$originalElem = $thumb;
-        data.thumburl = $thumb.attr("data-lazy-src") || 
-                        $thumb.attr("data-original") || 
-                        $thumb.attr("data-src") || 
-                        $thumb.attr("data-normal") || 
-                        $thumb.attr("data-echo") || 
-                        $thumb.attr("src");
-        data.shownAsPreview = ($thumb.width()==0 || ($thumb.width()>this.threshold && $thumb.height()>this.threshold));
-        break;
-      }
+      if (this.__getImage(data, $thumbnails.eq(i))) break;
     }
 
     if (!data.$originalElem) {
       // or check background-image
-      const $bgi = $link.find("[background-image]");
-      if ($bgi > 0) {
-        data.$originalElem = $bgi;
-        data.thumburl = $bgi.attr("background-image").match(/url\(["'](.?+)["']\)/)[1];
-        data.shownAsPreview = false;
-      } else {
-        // or check background
-        const $bg = $link.find("[background]");
-        for (let i=0; i<$bg.length; i++) {
-          const $bgi = $bg.eq(i),
-                urlmatch = $bgi.attr("background").match(/url\(["'](.?+)["']\)/);
-          if (urlmatch.length[1]) {
-            data.$originalElem = $bgi;
-            data.thumburl = urlmatch[1];
-            data.shownAsPreview = false;
-            break;
-          }
+      const $hasStyle= $link.find("[style]").addBack("[style]");
+      for (let i=0; i<$hasStyle.length; i++) {
+        const $e = $hasStyle.eq(i),
+              urlmatch = $e.attr("style").match(/url\(["'](.+?)["']\)/);
+        if (urlmatch && urlmatch.length>1) {
+          data.$originalElem = $e;
+          data.thumburl = urlmatch[1];
+          data.shownAsPreview = false;
+          break;
         }
       }
     }
+  }
+
+
+  __getImage(data, $img) {
+    const lazysrc = $img.attr("data-lazy-src") || 
+                    $img.attr("data-original") || 
+                    $img.attr("data-src") || 
+                    $img.attr("data-normal") || 
+                    $img.attr("data-echo");
+    if (lazysrc || ($img.width()>16 && $img.height()>16)) {
+      data.$originalElem = $img;
+      data.thumburl = lazysrc || $img.attr("src");
+      data.shownAsPreview = (($img.width()==0 && lazysrc) || $img.width()>this.threshold || $img.height()>this.threshold);
+      return true;
+    }
+    return false;
   }
 
 
@@ -259,6 +257,9 @@ class Content {
         this.pageindex = {
           $elem: $doc.find("#boolay-pageindex")
         };
+        this.urllink = {
+          $elem: $doc.find("#boolay-urllink")
+        };
 
         this.linktable.$container.on("click", ".boolay-link", this.onLinkItemClicked.bind(this));
 
@@ -278,7 +279,7 @@ class Content {
 
   _createItems() {
     for (let i=0; i<this.images.length; i++) {
-      this.images[i].$pane = this.preview.$item.clone().attr("src", this.images[i].linkurl);
+      this.images[i].$pane = this.preview.$item.clone().attr("src", this.images[i].thumburl);
       this.preview.$container.append(this.images[i].$pane);
     }
     for (let i=0; i<this.links.length; i++) {
@@ -292,7 +293,7 @@ class Content {
 
 
   onLinkItemClicked(evnet) {
-    window.open($(event.target).attr("url"));
+    window.open($(event.target).parents("[url]").attr("url"));
   }
 
 
@@ -319,10 +320,12 @@ class Content {
     this.linktable.$container.children(".boolay-link").removeClass("selected");
     this.links[index].$pane.addClass("selected");
     this.pageindex.$elem.text("link table");
+    this.urllink.$elem.text(this.links[index].linkurl).attr("href", this.links[index].linkurl);
 
     let scrollTop = this.linktable.$container.scrollTop();
     const $pane = this.links[index].$pane,
           centerY = $pane.position().top + scrollTop + $pane.height() * 0.5;
+    this.pageindex.$elem.text("link table");
     scrollTop = centerY - this.linktable.$elem.height() * 0.5;
     if (scrollTop < 0) scrollTop = 0;
     this.linktable.$container.animate({scrollTop});
@@ -336,6 +339,7 @@ class Content {
     this.preview.$container.children(".boolay-image").removeClass("shown");
     this.images[index].$pane.addClass("shown");
     this.pageindex.$elem.text((index+1) + " / " + this.images.length);
+    this.urllink.$elem.text(this.images[index].linkurl).attr("href", this.images[index].linkurl);
   }
 
   scrollTo(index) {
